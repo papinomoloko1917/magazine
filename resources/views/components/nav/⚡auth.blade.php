@@ -2,16 +2,8 @@
 
 use Livewire\Component;
 
-new class extends Component {
-    //
-};
-?>
-
-<?php
-
-use Livewire\Component;
-
-new class extends Component {
+new class extends Component
+{
     //
 };
 ?>
@@ -42,7 +34,7 @@ new class extends Component {
     <!-- Аватар с меню -->
     <div class="dropdown dropdown-end">
         <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
-            <div class="w-10 border rounded-full bg-base-200 flex items-center justify-center text-lg">
+            <div class="bg-base-200 flex w-10 items-center justify-center rounded-full border text-lg">
                 <span>{{ str(auth()->user()->name)->substr(0, 1) }}</span>
             </div>
         </div>
