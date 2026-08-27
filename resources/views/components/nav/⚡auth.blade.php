@@ -54,7 +54,10 @@ new class extends Component {
                 </a>
             </li>
             <li><a>Settings</a></li>
-            <li><a>Logout</a></li>
+            <form action="{{ route('logout') }}" method="POST">
+                @csrf
+                <li><button type="submit">Выйти</button></li>
+            </form>
         </ul>
     </div>
 </div>

@@ -13,7 +13,7 @@ new class extends Component {
 <div class="min-h-screen flex items-center justify-center p-4">
     <div class="w-full max-w-sm">
 
-        <form action="{{ route('register.store') }}" method="POST" class="flex flex-col gap-4">
+        <form action="{{ route('login.store') }}" method="POST" class="flex flex-col gap-4">
             @csrf
             <div class="flex justify-between items-center">
                 <h1 class="text-md font-semibold">Войти в аккаунт</h1>
