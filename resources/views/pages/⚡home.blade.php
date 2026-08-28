@@ -3,8 +3,7 @@
 use App\Models\Car;
 use Livewire\Component;
 
-new class extends Component
-{
+new class extends Component {
     public $cars = [];
 
     public function mount()
@@ -15,8 +14,10 @@ new class extends Component
 ?>
 
 <div>
-    <h1>Домашняя страница</h1>
-    @foreach ($cars as $car)
-        <h1 class="text-2xl">{{ $car->name }}</h1>
-    @endforeach
+    @if (auth()->check())
+        <livewire:product.card :cars="$cars" />
+    @else
+        <p class="text-xl mt-16 flex items-center text-center justify-center">Для просмотра контента необходимо
+            авторизоваться</p>
+    @endif
 </div>

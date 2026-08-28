@@ -14,11 +14,12 @@
 
 <body class="container mx-auto px-4">
     <header>
-        @livewire('nav.navbar')
+        <livewire:nav.navbar />
     </header>
     <main>
         {{ $slot }}
     </main>
+    <livewire:footer.footer />
 
 
     @livewireScripts

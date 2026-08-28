@@ -36,7 +36,7 @@ new class extends Component {
             </fieldset>
 
             <button type="submit" class="btn btn-neutral btn-md w-full mt-3">Вход</button>
-            <a wire:navigate href="{{ route('auth.register') }}" class="link w-full text-center mt-2">Создать
+            <a wire:navigate href="{{ route('register') }}" class="link w-full text-center mt-2">Создать
                 аккаунт</a>
         </form>
     </div>

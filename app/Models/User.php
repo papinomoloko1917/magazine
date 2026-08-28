@@ -54,8 +54,8 @@ class User extends Authenticatable
             : $initials;
     }
 
-    public function phoneNumbers()
+    public function cars()
     {
-        return $this->belongsToMany(PhoneNumber::class);
+        return $this->belongsToMany(Car::class);
     }
 }
